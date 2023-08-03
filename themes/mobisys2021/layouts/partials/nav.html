@@ -1,0 +1,30 @@
+<nav>
+	<!-- <container> -->
+	<container style="max-width:1120x">
+		<input type="checkbox" id="hamburger" />
+		<label for="hamburger"></label>
+		<ul>
+			{{ $currentPage := . }}
+			{{ range .Site.Menus.main }}
+				{{ if not .HasChildren }}
+					<li class='{{if ($currentPage.IsMenuCurrent "main" .)}}active{{end}}'>
+						<a href="{{ .URL }}">{{ .Name }}</a>
+					</li>
+				{{ else }}
+					<li>
+						<a href="#" class='{{if ($currentPage.HasMenuCurrent "main" .)}}active{{end}}'>
+							{{ .Name }}
+							<span></span>
+						</a>
+						<ul>
+							{{ range .Children }}
+								<li>
+									<a href="{{ .URL }}" class='{{if ($currentPage.IsMenuCurrent "main" .)}}active{{end}}'>{{ .Name }}</a>
+								</li>
+							{{ end }}
+						</ul>
+				{{ end }}
+			{{ end }}
+		</ul>
+	</container>
+</nav>

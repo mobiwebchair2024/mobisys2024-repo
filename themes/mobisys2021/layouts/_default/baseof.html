@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{{- partial "head.html" . -}}
+	</head>
+	<body class="preload">
+		<header>
+			<!--<container style="background-color: rgba(74, 89, 104, 0.418);background-clip: content-box;">-->
+<container style="background-clip: content-box;">
+				{{- partial "header.html" . -}}
+			</container>
+		</header>
+		{{- partial "nav.html" . -}}
+		<main>
+			<container>
+				{{- partial "main.html" . -}} 
+			</container>
+		</main>
+		<section id="sponsors">
+			<container>
+				{{- partial "sponsors.html" . -}}
+			</container>
+		</section>
+		<footer>
+			<container>
+				{{- partial "footer.html" . -}}
+			</container>
+		</footer>
+		{{- partial "foot.html" . -}}
+	</body>
+</html>

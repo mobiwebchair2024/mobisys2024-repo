@@ -1,0 +1,11 @@
+<div class="iot" style="display:inline-block;vertical-align:middle;max-width: 28%;">
+    <img src="./media/iot/{{ .Get "src" }}.jpg" alt="{{ .Get "name" }}" title="{{ .Get "name" }}">
+</div>
+<div style="display:inline-block; width:1000px; max-width: 70%;vertical-align:middle">
+    <p style="margin-left: 5%;">
+        <b><i>{{ .Get "role" }}</i>: {{ .Get "name" }}</b>
+        <br>
+        {{ .Inner | markdownify }}
+    </p>
+</div>
+<p></p>

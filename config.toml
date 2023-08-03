@@ -1,0 +1,93 @@
+baseURL = ""
+uglyURLs = true
+relativeURLs = true
+languageCode = "en-us"
+title = "ACM MobiSys 2024"
+theme = "mobisys2021"
+
+[menu]
+[[menu.main]]
+  name = 'Attendee Info'
+  weight = 10
+[[menu.main]]
+  name = 'Author Info'
+  weight = 20
+[[menu.main]]
+  name = 'Committees'
+  weight = 30
+[[menu.main]]
+  name = 'Program'
+  weight = 60
+[[menu.main]]
+  name = 'Workshops'
+  weight = 70
+
+[params.conf]
+	name = "ACM MobiSys 2024"
+	keyword = "mobisys24, mobisys2024, mobisys 2024, mobisys 24"
+	description = "The 22th ACM International Conference on Mobile Systems, Applications, and Services"
+	glyphUnicode = "10ffff"
+	dates = "June 3 - June 7, 2024"
+	location = "Minato City, Tokyo"
+	notification = ""
+	#countdownTimestamp = "June 28, 2021, 11:40:00 AM"
+	#countdownTimestamp = "2021-06-28T15:40:00+0000"
+	#countdownText = "Countdown to <br />Main Conference"
+
+[params.theme]
+	googleFont = "Montserrat"
+	weight = 400
+	linkWeight = 500
+	sectionWeight = 800
+	boldWeight = 600 
+	
+[params.theme.nav]
+	color = "#fff"
+	bg = "#3058a1"
+	alt = "#0c1443"
+	dropdownBg = "rgba(255,255,255,0.95)"
+	dropdownColor = "#341170"
+	weight = 400
+
+[params.theme.header]
+	bg = "#50bcdf"
+	color = "#fff"
+	accent = "#fff"
+	accentWeight = 900
+	tertiaryWeight = 700
+	weight = 600
+	shadowColor = "#000"
+	shadowSize = "10px"
+	textStrokeWidth = "1px"
+	textStrokeColor = "#000"
+	bgFilename = "media/header/mobisys2024_head_img_2.jpg"
+	bgSize = "cover"
+	bgCopyrightText = "Header © Wikimedia"
+	bgCopyrightURL = "https://en.wikipedia.org/wiki/Tokyo_Tower"
+	
+[params.theme.body]
+	bg = "#edf0f2"
+	color = "#222"
+	accent = "#ee4042"
+	alt = "#0c1443"
+	line = "#bbb"
+	align = "justify"
+	
+[params.theme.badge]
+	bg = "#337ab7"
+	color = "#fff"
+	weight = 400
+
+[params.theme.footer]
+	bg = "#080d23"
+	color = "#ffffff"
+
+[params.theme.sponsors]
+	bg = "#fff"
+	color = "#080d23"
+
+[params]
+	copyright = "© 2024 ACM"
+
+[markup.goldmark.renderer]
+unsafe= true

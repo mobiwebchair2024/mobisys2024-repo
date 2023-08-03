@@ -1,0 +1,14 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "MobiSys 2021"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = ""
+tags = []
+features = []
+
+[author]
+  name = "Charles J. Carver"
+  homepage = "https://cs.dartmouth.edu/ccarver/"
